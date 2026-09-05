@@ -1,0 +1,73 @@
+# Build output directories
+build/
+build-*/
+out/
+bin/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+.ninja_log
+.ninja_deps
+Makefile.user
+
+# Packaged release archives and folders
+dist/
+release/
+*.zip
+*.tar
+*.tar.gz
+*.tar.xz
+*.7z
+
+# Compiled libraries and intermediate binaries
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.exe
+*.pdb
+*.ilk
+*.exp
+*.o
+*.obj
+*.lo
+*.la
+*.res
+
+# Pawn compiler outputs (pawno / qawno)
+*.amx
+*.lst
+*.asm
+
+# SA-MP and open.mp server runtime logs
+*.log
+logs/
+server_log.txt
+crashinfo.txt
+
+# TTS cache (keep folder via .gitkeep, ignore generated audio)
+cache/tts/*
+!cache/tts/.gitkeep
+
+# IDEs, editors and tooling
+.vscode/
+.idea/
+*.user
+*.suo
+*.sln.docstates
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.clangd/
+.cache/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+

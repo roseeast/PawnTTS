@@ -1,0 +1,11 @@
+{
+  "port": 7788,
+  "bind_ip": "0.0.0.0",
+  "public_url": "",
+  "default_voice": "id",
+  "cache_dir": "cache/tts",
+  "cache_memory_limit": 256,
+  "provider": "google",
+  "custom_http_url": "http://127.0.0.1:5000/tts"
+}
+
