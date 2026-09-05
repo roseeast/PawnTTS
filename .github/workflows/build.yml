@@ -43,11 +43,13 @@ jobs:
 
       - name: Configure CMake
         run: |
+          sudo update-alternatives --set i686-w64-mingw32-gcc /usr/bin/i686-w64-mingw32-gcc-posix || true
+          sudo update-alternatives --set i686-w64-mingw32-g++ /usr/bin/i686-w64-mingw32-g++-posix || true
           cmake -B build-win -S . \
             -DCMAKE_BUILD_TYPE=Release \
             -DCMAKE_SYSTEM_NAME=Windows \
-            -DCMAKE_C_COMPILER=i686-w64-mingw32-gcc \
-            -DCMAKE_CXX_COMPILER=i686-w64-mingw32-g++
+            -DCMAKE_C_COMPILER=i686-w64-mingw32-gcc-posix \
+            -DCMAKE_CXX_COMPILER=i686-w64-mingw32-g++-posix
 
       - name: Build
         run: cmake --build build-win --config Release

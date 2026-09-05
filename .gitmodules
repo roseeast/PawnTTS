@@ -1,0 +1,3 @@
+[submodule "third_party/samp-plugin-sdk"]
+	path = third_party/samp-plugin-sdk
+	url = https://github.com/maddinat0r/samp-plugin-sdk.git
